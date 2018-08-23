@@ -10,6 +10,10 @@
 		C2EC6D94212E9AC900C7438B /* FP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC6D8A212E9AC900C7438B /* FP.framework */; };
 		C2EC6D99212E9AC900C7438B /* FPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EC6D98212E9AC900C7438B /* FPTests.swift */; };
 		C2EC6D9B212E9AC900C7438B /* FP.h in Headers */ = {isa = PBXBuildFile; fileRef = C2EC6D8D212E9AC900C7438B /* FP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2EC6DA8212E9B3F00C7438B /* Runes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EC6DA4212E9B3F00C7438B /* Runes.swift */; };
+		C2EC6DA9212E9B3F00C7438B /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EC6DA5212E9B3F00C7438B /* Curry.swift */; };
+		C2EC6DAA212E9B3F00C7438B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EC6DA6212E9B3F00C7438B /* Result.swift */; };
+		C2EC6DAB212E9B3F00C7438B /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EC6DA7212E9B3F00C7438B /* Future.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		C2EC6D93212E9AC900C7438B /* FPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2EC6D98212E9AC900C7438B /* FPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPTests.swift; sourceTree = "<group>"; };
 		C2EC6D9A212E9AC900C7438B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2EC6DA4212E9B3F00C7438B /* Runes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Runes.swift; sourceTree = "<group>"; };
+		C2EC6DA5212E9B3F00C7438B /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
+		C2EC6DA6212E9B3F00C7438B /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		C2EC6DA7212E9B3F00C7438B /* Future.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,10 @@
 		C2EC6D8C212E9AC900C7438B /* FP */ = {
 			isa = PBXGroup;
 			children = (
+				C2EC6DA5212E9B3F00C7438B /* Curry.swift */,
+				C2EC6DA7212E9B3F00C7438B /* Future.swift */,
+				C2EC6DA6212E9B3F00C7438B /* Result.swift */,
+				C2EC6DA4212E9B3F00C7438B /* Runes.swift */,
 				C2EC6D8D212E9AC900C7438B /* FP.h */,
 				C2EC6D8E212E9AC900C7438B /* Info.plist */,
 			);
@@ -148,6 +160,7 @@
 				TargetAttributes = {
 					C2EC6D89212E9AC900C7438B = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					C2EC6D92212E9AC900C7438B = {
 						CreatedOnToolsVersion = 10.0;
@@ -194,6 +207,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2EC6DAA212E9B3F00C7438B /* Result.swift in Sources */,
+				C2EC6DA8212E9B3F00C7438B /* Runes.swift in Sources */,
+				C2EC6DAB212E9B3F00C7438B /* Future.swift in Sources */,
+				C2EC6DA9212E9B3F00C7438B /* Curry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +358,7 @@
 		C2EC6D9F212E9AC900C7438B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +376,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.octree.parser.FP;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +385,7 @@
 		C2EC6DA0212E9AC900C7438B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +411,7 @@
 		C2EC6DA2212E9AC900C7438B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7A5GV3DH33;
 				INFOPLIST_FILE = FPTests/Info.plist;
@@ -409,6 +430,7 @@
 		C2EC6DA3212E9AC900C7438B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7A5GV3DH33;
 				INFOPLIST_FILE = FPTests/Info.plist;
