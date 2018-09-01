@@ -28,3 +28,29 @@ public func >-> <T, U, V>(f: @escaping (T) -> U?, g: @escaping (U) -> V?) -> (T)
 public func <-< <T, U, V>(f: @escaping (U) -> V?, g: @escaping (T) -> U?) -> (T) -> V? {
     return { x in g(x) >>- f }
 }
+
+public func <*> <T, U>(f: ((T) -> U)?, a: T?) -> U? {
+    return a.apply(f)
+}
+
+public func <* <T, U>(lhs: T?, rhs: U?) -> T? {
+    switch rhs {
+    case .none: return .none
+    case .some: return lhs
+    }
+}
+
+public func *> <T, U>(lhs: T?, rhs: U?) -> U? {
+    switch lhs {
+    case .none: return .none
+    case .some: return rhs
+    }
+}
+
+
+public extension Optional {
+
+    func apply<T>(_ f: ((Wrapped) -> T)?) -> T? {
+        return f.flatMap { self.map($0) }
+    }
+}
