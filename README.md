@@ -5,7 +5,7 @@ Functional Programming Tools
 ## Install
 
 ```
-github "Octree/FP" ~> 0.1.0
+github "Octree/FP" ~> 0.2.1
 ```
 
 
