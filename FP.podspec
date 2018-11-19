@@ -1,12 +1,11 @@
 Pod::Spec.new do |s|
-  s.name         = "SwiftyWave"
+  s.name         = "FP"
   s.version      = "0.2.2"
   s.summary      = "Function Programming Utils"
 
   s.homepage     = "https://github.com/octree/FP"
 
-  s.license      = "SwiftyWave is released under the WTFPL license. (Do What the Fuck You Want to Public License)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
   s.author             = { "Octree" => "octree@octree.me" }
   # s.social_media_url   = "http://twitter.com/"
