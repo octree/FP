@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C23270CD213A7F9800DD6608 /* Optional+FP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23270CC213A7F9800DD6608 /* Optional+FP.swift */; };
-		C2E0566D21390F4A00DCE4CD /* Array+FP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E0566C21390F4A00DCE4CD /* Array+FP.swift */; };
 		C2EC6D94212E9AC900C7438B /* FP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC6D8A212E9AC900C7438B /* FP.framework */; };
 		C2EC6D99212E9AC900C7438B /* FPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EC6D98212E9AC900C7438B /* FPTests.swift */; };
-		C2EC6D9B212E9AC900C7438B /* FP.h in Headers */ = {isa = PBXBuildFile; fileRef = C2EC6D8D212E9AC900C7438B /* FP.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2EC6DA8212E9B3F00C7438B /* Runes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EC6DA4212E9B3F00C7438B /* Runes.swift */; };
-		C2EC6DA9212E9B3F00C7438B /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EC6DA5212E9B3F00C7438B /* Curry.swift */; };
-		C2EC6DAA212E9B3F00C7438B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EC6DA6212E9B3F00C7438B /* Result.swift */; };
-		C2EC6DAB212E9B3F00C7438B /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EC6DA7212E9B3F00C7438B /* Future.swift */; };
+		C2F2192521A2B4D0000D25A8 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2191D21A2B4D0000D25A8 /* Curry.swift */; };
+		C2F2192621A2B4D0000D25A8 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2191E21A2B4D0000D25A8 /* Future.swift */; };
+		C2F2192721A2B4D0000D25A8 /* Optional+FP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2191F21A2B4D0000D25A8 /* Optional+FP.swift */; };
+		C2F2192821A2B4D0000D25A8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2192021A2B4D0000D25A8 /* Result.swift */; };
+		C2F2192921A2B4D0000D25A8 /* Array+FP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2192121A2B4D0000D25A8 /* Array+FP.swift */; };
+		C2F2192B21A2B4D0000D25A8 /* Runes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2192321A2B4D0000D25A8 /* Runes.swift */; };
+		C2F2192D21A2B7C1000D25A8 /* FP.h in Headers */ = {isa = PBXBuildFile; fileRef = C2F2192221A2B4D0000D25A8 /* FP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,18 +29,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C23270CC213A7F9800DD6608 /* Optional+FP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+FP.swift"; sourceTree = "<group>"; };
-		C2E0566C21390F4A00DCE4CD /* Array+FP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+FP.swift"; sourceTree = "<group>"; };
 		C2EC6D8A212E9AC900C7438B /* FP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2EC6D8D212E9AC900C7438B /* FP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FP.h; sourceTree = "<group>"; };
-		C2EC6D8E212E9AC900C7438B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2EC6D93212E9AC900C7438B /* FPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2EC6D98212E9AC900C7438B /* FPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPTests.swift; sourceTree = "<group>"; };
 		C2EC6D9A212E9AC900C7438B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2EC6DA4212E9B3F00C7438B /* Runes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Runes.swift; sourceTree = "<group>"; };
-		C2EC6DA5212E9B3F00C7438B /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
-		C2EC6DA6212E9B3F00C7438B /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		C2EC6DA7212E9B3F00C7438B /* Future.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
+		C2F2191D21A2B4D0000D25A8 /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
+		C2F2191E21A2B4D0000D25A8 /* Future.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
+		C2F2191F21A2B4D0000D25A8 /* Optional+FP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+FP.swift"; sourceTree = "<group>"; };
+		C2F2192021A2B4D0000D25A8 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		C2F2192121A2B4D0000D25A8 /* Array+FP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+FP.swift"; sourceTree = "<group>"; };
+		C2F2192221A2B4D0000D25A8 /* FP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FP.h; sourceTree = "<group>"; };
+		C2F2192321A2B4D0000D25A8 /* Runes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Runes.swift; sourceTree = "<group>"; };
+		C2F2192421A2B4D0000D25A8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2F2192E21A2C2CE000D25A8 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +66,8 @@
 		C2EC6D80212E9AC900C7438B = {
 			isa = PBXGroup;
 			children = (
+				C2F2192E21A2C2CE000D25A8 /* Package.swift */,
+				C2F2191C21A2B4CF000D25A8 /* Source */,
 				C2EC6D8C212E9AC900C7438B /* FP */,
 				C2EC6D97212E9AC900C7438B /* FPTests */,
 				C2EC6D8B212E9AC900C7438B /* Products */,
@@ -83,14 +86,6 @@
 		C2EC6D8C212E9AC900C7438B /* FP */ = {
 			isa = PBXGroup;
 			children = (
-				C2EC6DA5212E9B3F00C7438B /* Curry.swift */,
-				C2EC6DA7212E9B3F00C7438B /* Future.swift */,
-				C2EC6DA6212E9B3F00C7438B /* Result.swift */,
-				C2EC6DA4212E9B3F00C7438B /* Runes.swift */,
-				C2EC6D8D212E9AC900C7438B /* FP.h */,
-				C2EC6D8E212E9AC900C7438B /* Info.plist */,
-				C2E0566C21390F4A00DCE4CD /* Array+FP.swift */,
-				C23270CC213A7F9800DD6608 /* Optional+FP.swift */,
 			);
 			path = FP;
 			sourceTree = "<group>";
@@ -104,6 +99,21 @@
 			path = FPTests;
 			sourceTree = "<group>";
 		};
+		C2F2191C21A2B4CF000D25A8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C2F2191D21A2B4D0000D25A8 /* Curry.swift */,
+				C2F2191E21A2B4D0000D25A8 /* Future.swift */,
+				C2F2191F21A2B4D0000D25A8 /* Optional+FP.swift */,
+				C2F2192021A2B4D0000D25A8 /* Result.swift */,
+				C2F2192121A2B4D0000D25A8 /* Array+FP.swift */,
+				C2F2192221A2B4D0000D25A8 /* FP.h */,
+				C2F2192321A2B4D0000D25A8 /* Runes.swift */,
+				C2F2192421A2B4D0000D25A8 /* Info.plist */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -111,7 +121,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2EC6D9B212E9AC900C7438B /* FP.h in Headers */,
+				C2F2192D21A2B7C1000D25A8 /* FP.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,12 +223,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2EC6DAA212E9B3F00C7438B /* Result.swift in Sources */,
-				C2EC6DA8212E9B3F00C7438B /* Runes.swift in Sources */,
-				C2E0566D21390F4A00DCE4CD /* Array+FP.swift in Sources */,
-				C2EC6DAB212E9B3F00C7438B /* Future.swift in Sources */,
-				C2EC6DA9212E9B3F00C7438B /* Curry.swift in Sources */,
-				C23270CD213A7F9800DD6608 /* Optional+FP.swift in Sources */,
+				C2F2192621A2B4D0000D25A8 /* Future.swift in Sources */,
+				C2F2192521A2B4D0000D25A8 /* Curry.swift in Sources */,
+				C2F2192921A2B4D0000D25A8 /* Array+FP.swift in Sources */,
+				C2F2192B21A2B4D0000D25A8 /* Runes.swift in Sources */,
+				C2F2192821A2B4D0000D25A8 /* Result.swift in Sources */,
+				C2F2192721A2B4D0000D25A8 /* Optional+FP.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +385,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FP/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -410,7 +420,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FP/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
