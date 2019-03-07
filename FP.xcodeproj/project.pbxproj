@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2A32FD622316E7800DB2F1E /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A32FD522316E7800DB2F1E /* Either.swift */; };
 		C2EC6D94212E9AC900C7438B /* FP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC6D8A212E9AC900C7438B /* FP.framework */; };
 		C2EC6D99212E9AC900C7438B /* FPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EC6D98212E9AC900C7438B /* FPTests.swift */; };
 		C2F2192521A2B4D0000D25A8 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2191D21A2B4D0000D25A8 /* Curry.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C2A32FD522316E7800DB2F1E /* Either.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
 		C2EC6D8A212E9AC900C7438B /* FP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2EC6D93212E9AC900C7438B /* FPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2EC6D98212E9AC900C7438B /* FPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPTests.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				C2F2192221A2B4D0000D25A8 /* FP.h */,
 				C2F2192321A2B4D0000D25A8 /* Runes.swift */,
 				C2F2192421A2B4D0000D25A8 /* Info.plist */,
+				C2A32FD522316E7800DB2F1E /* Either.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2A32FD622316E7800DB2F1E /* Either.swift in Sources */,
 				C2F2192621A2B4D0000D25A8 /* Future.swift in Sources */,
 				C2F2192521A2B4D0000D25A8 /* Curry.swift in Sources */,
 				C2F2192921A2B4D0000D25A8 /* Array+FP.swift in Sources */,
