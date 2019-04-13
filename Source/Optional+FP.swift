@@ -56,7 +56,7 @@ public extension Optional {
 }
 
 public func <|> <T>(lhs: T?, rhs: @autoclosure () -> T?) -> T? {
-    return lhs.or(rhs)
+    return lhs.or(rhs())
 }
 
 public extension Optional {

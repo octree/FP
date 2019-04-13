@@ -13,7 +13,7 @@
 		C2F2192521A2B4D0000D25A8 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2191D21A2B4D0000D25A8 /* Curry.swift */; };
 		C2F2192621A2B4D0000D25A8 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2191E21A2B4D0000D25A8 /* Future.swift */; };
 		C2F2192721A2B4D0000D25A8 /* Optional+FP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2191F21A2B4D0000D25A8 /* Optional+FP.swift */; };
-		C2F2192821A2B4D0000D25A8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2192021A2B4D0000D25A8 /* Result.swift */; };
+		C2F2192821A2B4D0000D25A8 /* Result+FP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2192021A2B4D0000D25A8 /* Result+FP.swift */; };
 		C2F2192921A2B4D0000D25A8 /* Array+FP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2192121A2B4D0000D25A8 /* Array+FP.swift */; };
 		C2F2192B21A2B4D0000D25A8 /* Runes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2192321A2B4D0000D25A8 /* Runes.swift */; };
 		C2F2192D21A2B7C1000D25A8 /* FP.h in Headers */ = {isa = PBXBuildFile; fileRef = C2F2192221A2B4D0000D25A8 /* FP.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,7 +38,7 @@
 		C2F2191D21A2B4D0000D25A8 /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
 		C2F2191E21A2B4D0000D25A8 /* Future.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
 		C2F2191F21A2B4D0000D25A8 /* Optional+FP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+FP.swift"; sourceTree = "<group>"; };
-		C2F2192021A2B4D0000D25A8 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		C2F2192021A2B4D0000D25A8 /* Result+FP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Result+FP.swift"; sourceTree = "<group>"; };
 		C2F2192121A2B4D0000D25A8 /* Array+FP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+FP.swift"; sourceTree = "<group>"; };
 		C2F2192221A2B4D0000D25A8 /* FP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FP.h; sourceTree = "<group>"; };
 		C2F2192321A2B4D0000D25A8 /* Runes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Runes.swift; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 				C2F2191D21A2B4D0000D25A8 /* Curry.swift */,
 				C2F2191E21A2B4D0000D25A8 /* Future.swift */,
 				C2F2191F21A2B4D0000D25A8 /* Optional+FP.swift */,
-				C2F2192021A2B4D0000D25A8 /* Result.swift */,
+				C2F2192021A2B4D0000D25A8 /* Result+FP.swift */,
 				C2F2192121A2B4D0000D25A8 /* Array+FP.swift */,
 				C2F2192221A2B4D0000D25A8 /* FP.h */,
 				C2F2192321A2B4D0000D25A8 /* Runes.swift */,
@@ -192,6 +192,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = C2EC6D80212E9AC900C7438B;
 			productRefGroup = C2EC6D8B212E9AC900C7438B /* Products */;
@@ -231,7 +232,7 @@
 				C2F2192521A2B4D0000D25A8 /* Curry.swift in Sources */,
 				C2F2192921A2B4D0000D25A8 /* Array+FP.swift in Sources */,
 				C2F2192B21A2B4D0000D25A8 /* Runes.swift in Sources */,
-				C2F2192821A2B4D0000D25A8 /* Result.swift in Sources */,
+				C2F2192821A2B4D0000D25A8 /* Result+FP.swift in Sources */,
 				C2F2192721A2B4D0000D25A8 /* Optional+FP.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +315,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -371,6 +373,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -406,7 +409,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "x86_64 i386 arm64 armv7 armv7s";
 			};
@@ -440,7 +443,7 @@
 				SDKROOT = "";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "x86_64 i386 arm64 armv7 armv7s";
 			};
@@ -460,7 +463,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.octree.parser.FPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -479,7 +482,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.octree.parser.FPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
