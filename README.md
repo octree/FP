@@ -8,15 +8,14 @@ Functional Programming Tools
 
 
 ```
-github "Octree/FP" ~> 0.2.2
+github "Octree/FP" ~> 0.3.0
 ```
 
 ### CocoaPods
 
-
-### Swift Package Manager
-
-
+```
+pod 'FP', '~> 0.3.0'
+```
 
 
 ## Curry
