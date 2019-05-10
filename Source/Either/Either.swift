@@ -21,31 +21,31 @@ public enum Either<A, B> {
 public extension Either {
     
     /// functor
-    func map<B1>(f: (B) -> B1) -> Either<A, B1> {
+    func map<B1>(_ transform: (B) -> B1) -> Either<A, B1> {
         
         switch self {
         case .left(let val):
             return .left(val)
         case .right(let val):
-            return .right(f(val))
+            return .right(transform(val))
         }
     }
     
     /// monad
-    func then<B1>(f: (B) -> Either<A, B1>) -> Either<A, B1> {
+    func then<B1>(_ transform: (B) -> Either<A, B1>) -> Either<A, B1> {
         switch self {
         case .left(let val):
             return .left(val)
         case .right(let val):
-            return f(val)
+            return transform(val)
         }
     }
     
     
     /// applicative
-    func apply<B1>(mf: Either<A, (B) -> B1>) -> Either<A, B1> {
+    func apply<B1>(_ mf: Either<A, (B) -> B1>) -> Either<A, B1> {
         
-        return mf.then(f: map)
+        return mf.then(map)
     }
 }
 
@@ -53,18 +53,18 @@ public extension Either {
 /// functor operator
 public func <^> <A, B, B1>(f: (B) -> B1, either: Either<A, B>) -> Either<A, B1> {
     
-    return either.map(f: f)
+    return either.map(f)
 }
 
 public func >>- <A, B, B1>(either: Either<A, B>, f: (B) -> Either<A, B1>) -> Either<A, B1> {
     
-    return either.then(f: f)
+    return either.then(f)
 }
 
 
 public func -<< <A, B, B1>(f: (B) -> Either<A, B1>, either: Either<A, B>) -> Either<A, B1> {
     
-    return either.then(f: f)
+    return either.then(f)
 }
 
 public func >-> <A, B, B1, B2>(f: @escaping (B) -> Either<A, B1>, g: @escaping (B1) -> Either<A, B2>) -> (B) -> Either<A, B2> {
@@ -89,7 +89,7 @@ public func <|> <A, B>(either1: Either<A, B>, either2: Either<A, B>) -> Either<A
 
 public func <*> <A, B, B1>(mf: Either<A, (B) -> B1>, either: Either<A, B>) -> Either<A, B1> {
     
-    return either.apply(mf: mf)
+    return either.apply(mf)
 }
 
 public func <* <A, B>(either1: Either<A, B>, either2: Either<A, B>) -> Either<A, B> {

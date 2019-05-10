@@ -11,7 +11,7 @@
 		C2EC6D94212E9AC900C7438B /* FP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC6D8A212E9AC900C7438B /* FP.framework */; };
 		C2EC6D99212E9AC900C7438B /* FPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EC6D98212E9AC900C7438B /* FPTests.swift */; };
 		C2F2192521A2B4D0000D25A8 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2191D21A2B4D0000D25A8 /* Curry.swift */; };
-		C2F2192621A2B4D0000D25A8 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2191E21A2B4D0000D25A8 /* Future.swift */; };
+		C2F2192621A2B4D0000D25A8 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2191E21A2B4D0000D25A8 /* Async.swift */; };
 		C2F2192721A2B4D0000D25A8 /* Optional+FP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2191F21A2B4D0000D25A8 /* Optional+FP.swift */; };
 		C2F2192821A2B4D0000D25A8 /* Result+FP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2192021A2B4D0000D25A8 /* Result+FP.swift */; };
 		C2F2192921A2B4D0000D25A8 /* Array+FP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F2192121A2B4D0000D25A8 /* Array+FP.swift */; };
@@ -36,7 +36,7 @@
 		C2EC6D98212E9AC900C7438B /* FPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPTests.swift; sourceTree = "<group>"; };
 		C2EC6D9A212E9AC900C7438B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2F2191D21A2B4D0000D25A8 /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
-		C2F2191E21A2B4D0000D25A8 /* Future.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
+		C2F2191E21A2B4D0000D25A8 /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
 		C2F2191F21A2B4D0000D25A8 /* Optional+FP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+FP.swift"; sourceTree = "<group>"; };
 		C2F2192021A2B4D0000D25A8 /* Result+FP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Result+FP.swift"; sourceTree = "<group>"; };
 		C2F2192121A2B4D0000D25A8 /* Array+FP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+FP.swift"; sourceTree = "<group>"; };
@@ -65,6 +65,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C24071ED2285C654000F0D35 /* Curry */ = {
+			isa = PBXGroup;
+			children = (
+				C2F2191D21A2B4D0000D25A8 /* Curry.swift */,
+			);
+			path = Curry;
+			sourceTree = "<group>";
+		};
+		C24071EE2285C663000F0D35 /* Async */ = {
+			isa = PBXGroup;
+			children = (
+				C2F2191E21A2B4D0000D25A8 /* Async.swift */,
+			);
+			path = Async;
+			sourceTree = "<group>";
+		};
+		C24071EF2285C6BC000F0D35 /* Optional */ = {
+			isa = PBXGroup;
+			children = (
+				C2F2191F21A2B4D0000D25A8 /* Optional+FP.swift */,
+			);
+			path = Optional;
+			sourceTree = "<group>";
+		};
+		C24071F02285C6C8000F0D35 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				C2F2192021A2B4D0000D25A8 /* Result+FP.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		C24071F12285C6D9000F0D35 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				C2F2192121A2B4D0000D25A8 /* Array+FP.swift */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
+		C24071F22285C6E1000F0D35 /* Either */ = {
+			isa = PBXGroup;
+			children = (
+				C2A32FD522316E7800DB2F1E /* Either.swift */,
+			);
+			path = Either;
+			sourceTree = "<group>";
+		};
 		C2EC6D80212E9AC900C7438B = {
 			isa = PBXGroup;
 			children = (
@@ -104,15 +152,15 @@
 		C2F2191C21A2B4CF000D25A8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				C2F2191D21A2B4D0000D25A8 /* Curry.swift */,
-				C2F2191E21A2B4D0000D25A8 /* Future.swift */,
-				C2F2191F21A2B4D0000D25A8 /* Optional+FP.swift */,
-				C2F2192021A2B4D0000D25A8 /* Result+FP.swift */,
-				C2F2192121A2B4D0000D25A8 /* Array+FP.swift */,
+				C24071F22285C6E1000F0D35 /* Either */,
+				C24071F12285C6D9000F0D35 /* Array */,
+				C24071F02285C6C8000F0D35 /* Result */,
+				C24071EF2285C6BC000F0D35 /* Optional */,
+				C24071EE2285C663000F0D35 /* Async */,
+				C24071ED2285C654000F0D35 /* Curry */,
 				C2F2192221A2B4D0000D25A8 /* FP.h */,
 				C2F2192321A2B4D0000D25A8 /* Runes.swift */,
 				C2F2192421A2B4D0000D25A8 /* Info.plist */,
-				C2A32FD522316E7800DB2F1E /* Either.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -228,7 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2A32FD622316E7800DB2F1E /* Either.swift in Sources */,
-				C2F2192621A2B4D0000D25A8 /* Future.swift in Sources */,
+				C2F2192621A2B4D0000D25A8 /* Async.swift in Sources */,
 				C2F2192521A2B4D0000D25A8 /* Curry.swift in Sources */,
 				C2F2192921A2B4D0000D25A8 /* Array+FP.swift in Sources */,
 				C2F2192B21A2B4D0000D25A8 /* Runes.swift in Sources */,

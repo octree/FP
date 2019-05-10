@@ -8,6 +8,13 @@
 
 import Foundation
 
+public extension Array {
+    
+    func apply<T>(_ mf: [(Element) -> T]) -> [T] {
+        return mf.flatMap { self.map($0) }
+    }
+}
+
 public func <^> <T, U>(f: (T) -> U, a: [T]) -> [U] {
     return a.map(f)
 }
@@ -42,13 +49,6 @@ public func <* <T, U>(lhs: [T], rhs: [U]) -> [T] {
 public func *> <T, U>(lhs: [T], rhs: [U]) -> [U] {
     return lhs.reduce([]) { accum, _ in
         accum + rhs
-    }
-}
-
-public extension Array {
-    
-    func apply<T>(_ fs: [(Element) -> T]) -> [T] {
-        return fs.flatMap { self.map($0) }
     }
 }
 
