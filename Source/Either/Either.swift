@@ -21,7 +21,7 @@ public enum Either<A, B> {
 public extension Either {
     
     /// functor
-    func map<B1>(_ transform: (B) -> B1) -> Either<A, B1> {
+    func fmap<B1>(_ transform: (B) -> B1) -> Either<A, B1> {
         
         switch self {
         case .left(let val):
@@ -45,7 +45,7 @@ public extension Either {
     /// applicative
     func apply<B1>(_ mf: Either<A, (B) -> B1>) -> Either<A, B1> {
         
-        return mf.then(map)
+        return mf.then(fmap)
     }
 }
 
@@ -53,7 +53,7 @@ public extension Either {
 /// functor operator
 public func <^> <A, B, B1>(f: (B) -> B1, either: Either<A, B>) -> Either<A, B1> {
     
-    return either.map(f)
+    return either.fmap(f)
 }
 
 public func >>- <A, B, B1>(either: Either<A, B>, f: (B) -> Either<A, B1>) -> Either<A, B1> {

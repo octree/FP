@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C24071F62285CC77000F0D35 /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24071F52285CC77000F0D35 /* Monoid.swift */; };
+		C24071FA2285CD05000F0D35 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24071F92285CD05000F0D35 /* State.swift */; };
 		C2A32FD622316E7800DB2F1E /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A32FD522316E7800DB2F1E /* Either.swift */; };
 		C2EC6D94212E9AC900C7438B /* FP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC6D8A212E9AC900C7438B /* FP.framework */; };
 		C2EC6D99212E9AC900C7438B /* FPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EC6D98212E9AC900C7438B /* FPTests.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		C24071F52285CC77000F0D35 /* Monoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monoid.swift; sourceTree = "<group>"; };
+		C24071F92285CD05000F0D35 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		C2A32FD522316E7800DB2F1E /* Either.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
 		C2EC6D8A212E9AC900C7438B /* FP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2EC6D93212E9AC900C7438B /* FPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +125,14 @@
 			path = Monoid;
 			sourceTree = "<group>";
 		};
+		C24071F82285CCF5000F0D35 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				C24071F92285CD05000F0D35 /* State.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
 		C2EC6D80212E9AC900C7438B = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +172,7 @@
 		C2F2191C21A2B4CF000D25A8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				C24071F82285CCF5000F0D35 /* State */,
 				C24071F42285CC67000F0D35 /* Monoid */,
 				C24071F22285C6E1000F0D35 /* Either */,
 				C24071F12285C6D9000F0D35 /* Array */,
@@ -291,6 +302,7 @@
 				C2F2192521A2B4D0000D25A8 /* Curry.swift in Sources */,
 				C2F2192921A2B4D0000D25A8 /* Array+FP.swift in Sources */,
 				C2F2192B21A2B4D0000D25A8 /* Runes.swift in Sources */,
+				C24071FA2285CD05000F0D35 /* State.swift in Sources */,
 				C24071F62285CC77000F0D35 /* Monoid.swift in Sources */,
 				C2F2192821A2B4D0000D25A8 /* Result+FP.swift in Sources */,
 				C2F2192721A2B4D0000D25A8 /* Optional+FP.swift in Sources */,

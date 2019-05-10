@@ -8,6 +8,21 @@
 
 import Foundation
 
+public extension Optional {
+    func apply<T>(_ f: ((Wrapped) -> T)?) -> T? {
+        return f.flatMap { self.map($0) }
+    }
+}
+
+public extension Optional {
+    func or(_ other: @autoclosure () -> Wrapped?) -> Wrapped? {
+        switch self {
+        case .some: return self
+        case .none: return other()
+        }
+    }
+}
+
 public func <^> <T, U>(f: (T) -> U, a: T?) -> U? {
     return a.map(f)
 }
@@ -46,23 +61,6 @@ public func *> <T, U>(lhs: T?, rhs: U?) -> U? {
     }
 }
 
-
-public extension Optional {
-
-    func apply<T>(_ f: ((Wrapped) -> T)?) -> T? {
-        return f.flatMap { self.map($0) }
-    }
-}
-
 public func <|> <T>(lhs: T?, rhs: @autoclosure () -> T?) -> T? {
     return lhs.or(rhs())
-}
-
-public extension Optional {
-    func or(_ other: @autoclosure () -> Wrapped?) -> Wrapped? {
-        switch self {
-        case .some: return self
-        case .none: return other()
-        }
-    }
 }
