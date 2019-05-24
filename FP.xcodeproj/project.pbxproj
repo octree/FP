@@ -11,6 +11,7 @@
 		C24071FA2285CD05000F0D35 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24071F92285CD05000F0D35 /* State.swift */; };
 		C24071FD2285D39F000F0D35 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24071FC2285D39F000F0D35 /* Reader.swift */; };
 		C24072002285D580000F0D35 /* Writer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24071FF2285D580000F0D35 /* Writer.swift */; };
+		C28CE32B2289AEA2006F2694 /* Compose.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28CE32A2289AEA2006F2694 /* Compose.swift */; };
 		C2A32FD622316E7800DB2F1E /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A32FD522316E7800DB2F1E /* Either.swift */; };
 		C2EC6D94212E9AC900C7438B /* FP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC6D8A212E9AC900C7438B /* FP.framework */; };
 		C2EC6D99212E9AC900C7438B /* FPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EC6D98212E9AC900C7438B /* FPTests.swift */; };
@@ -38,6 +39,7 @@
 		C24071F92285CD05000F0D35 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		C24071FC2285D39F000F0D35 /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
 		C24071FF2285D580000F0D35 /* Writer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Writer.swift; sourceTree = "<group>"; };
+		C28CE32A2289AEA2006F2694 /* Compose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compose.swift; sourceTree = "<group>"; };
 		C2A32FD522316E7800DB2F1E /* Either.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
 		C2EC6D8A212E9AC900C7438B /* FP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2EC6D93212E9AC900C7438B /* FPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +155,14 @@
 			path = Writer;
 			sourceTree = "<group>";
 		};
+		C28CE3292289AE96006F2694 /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				C28CE32A2289AEA2006F2694 /* Compose.swift */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
 		C2EC6D80212E9AC900C7438B = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +202,7 @@
 		C2F2191C21A2B4CF000D25A8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				C28CE3292289AE96006F2694 /* Compose */,
 				C24071FE2285D557000F0D35 /* Writer */,
 				C24071FB2285D392000F0D35 /* Reader */,
 				C24071F82285CCF5000F0D35 /* State */,
@@ -329,6 +340,7 @@
 				C24071F62285CC77000F0D35 /* Monoid.swift in Sources */,
 				C2F2192821A2B4D0000D25A8 /* Result+FP.swift in Sources */,
 				C2F2192721A2B4D0000D25A8 /* Optional+FP.swift in Sources */,
+				C28CE32B2289AEA2006F2694 /* Compose.swift in Sources */,
 				C24072002285D580000F0D35 /* Writer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
